@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Book Shop City Christchurch. Old Bookshop where you can visit or buy books. Check out our new arrivals books first edition showcase, featured author book of the week">
+	<meta name="keywords" content="Christchurch Bookshop, Book store, old books, rare books, hard find books, books valuations, Book restoration, book shop">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ye Olde Bookshop</title>
+    <link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/responsive-nav.js"></script>
+</head>
+<body>
+<header>
+		<h1>Ye Olde Bookshop</h1>
+	</header>
+	
+	<nav class="nav-collapse">
+		<ul>
+			<li><a href="home.html">home</a></li>
+			<li><a href="about_us.html">about us</a></li>
+			<li><a href="new_arrivals.html">new arrivals</a></li>
+			<li><a href="books.html">books</a></li>
+			<li><a href="restoration.html">restoration</a></li>
+			<li><a href="enquiries.html" class="selected">enquiries</a></li>
+		</ul>
+	</nav>
+	
+	<div id="contents">
+        <main>
+		<br>
+		<div class="contact_us">
+			 <div class="contact_details">
+				<div>
+				<h3>Contact Details</h3>
+						<h4>Phone: 03-364 8833</h4>
+						<h4>Email: enquiries@yeoldebookshop.co.nz</h4><br><br>
+						
+						<h3>Address</h3>
+						<h4>Street: 119 Colombo Street</h4>
+						<h4>Surburb: Sydenham</h4>
+						<h4>City: Christchurch 8011</h4>
+						<h4>Country: New Zealand</h4>
+				</div>		
+				<div class="googlemap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.272427329691!2d172.63403381567898!3d-43.559206179124594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d3220a5e7fc86a3%3A0x59e66f5030850fb7!2s119+Colombo+St%2C+Sydenham%2C+Christchurch+8023!5e0!3m2!1sen!2snz!4v1557959381592!5m2!1sen!2snz"></iframe>
+				</div>
+			</div>
+             
+					
+			<div class="enquiries_form">
+				<h2 class="general_enquiries">General Enquiries</h2>	
+				<p>Please take a few moments to send us your questions, comments or suggestions, and we will respond as quick as possible</p>
+					<form 
+						name="enquiriesform"	
+						action="mailto:enquiries@yeoldebookshop.co.nz"
+						method="POST"
+						enctype="text/plain"
+						onsubmit ="return validateForm();">
+							
+							<div class="formStyle">
+								<label for="userName">What is your name?</label><span class="reder"> (required)</span><br>
+								<input type="text" id="userName" name="userName"/><br>
+							</div>
+							
+							<div class="formStyle">
+								<label for="userEmail">Your best contact email:</label><span class="reder"> (required)</span><br>
+								<input type="text" id="userEmail" name="userEmail"/><br>
+							</div>
+							
+							<div class="formStyle">
+								<label for="contactReason">What do you wish to enquire about?</label><br>
+								<select id="contactReason" name="contactReason">
+									<option value="Request">Questions</option>
+									<option value="Complaint">Comments</option>
+									<option value="Compliment">Suggestions</option>
+								</select>
+							</div>	
+							<div class="formStyle">
+								<label for="userMessage" class="label">Your Message</label><br>
+								<textarea id = "userMessage" name="message" rows="8" cols="40"></textarea> 
+							</div> 								
+						<div class="formStyle">
+							<input type="submit" value="Send">
+						</div>					
+					</form>
+			</div>		
+		</div>	
+		</main>
+	</div>
+	<footer>
+		<p class="footer">&copy; Copyright 2019 Ye Olde Bookshop all right reserved.</p>
+	</footer>
+    <script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+		var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			label: "&#8801;"
+		});
+    </script>
+</body>
+</html>

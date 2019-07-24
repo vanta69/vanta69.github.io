@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Book Shop City Christchurch. Old Bookshop where you can visit or buy books. Check out our new arrivals books first edition showcase, featured author book of the week">
+	<meta name="keywords" content="Christchurch Bookshop, Book store, old books, rare books, hard find books, books valuations, Book restoration, book shop">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ye Olde Bookshop</title>
+	<link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/responsive-nav.js"></script>
+</head>
+<body>
+<header>
+		<h1>Ye Olde Bookshop</h1>
+	</header>
+	
+	<nav class="nav-collapse">
+		<ul>
+			<li><a href="home.html">home</a></li>
+			<li><a href="about_us.html">about us</a></li>
+			<li><a href="new_arrivals.html">new arrivals</a></li>	
+			<li><a href="books.html">books</a></li>
+			<li><a href="restoration.html" class="selected">restoration</a></li>
+			<li><a href="enquiries.html">enquiries</a></li>
+		</ul>
+	</nav>
+	
+	<div id="contents">
+        <main>
+		<h2 id="restoration_repair">Book Restoration and Repair</h2>
+		
+		<div class="book_restoration">
+		
+			<div class="restoration_img">
+				<img src="images/before_after_restoration.png" alt="Book before After Restoration">
+			</div>
+			
+			<div class="restoration_content">
+				<p>Our book restorer and fine binder is Nick Smith who trained under Arthur Johnson at the London College Bridge of Printing. He is a fellow and past president of the institute of Bookbinding and Allied Trades (IBAT) with over 30 years experience.</p>
+				<p>A typical restoration will include re-stitching, reparing corners, replacing the linings and refitting the original spine if still in existence, to match the original book as closely as possible.
+				
+			</div>
+			
+		</div>
+            
+		<div class="restoration_video">	
+			<div>
+			
+				<p>Every repair is different therefore it is essential that we see the condition of the book before we can evaluate the work required. This way we can give the best advice and discuss with you the various options available based on your requirements.</p>
+						
+			</div>
+				
+			<div class="showrestorationvideo">
+					
+				<video controls>
+				<source  src="media/Rare-Book-Restoration.mp4" type="video/mp4">
+				<source  src="media/Rare-Book-Restoration.webm" type="video/webm">
+					Your browser does not support HTML5 video.
+				</video>
+			</div>
+        
+		</div>
+			
+		
+		</main>
+    </div>
+	
+	<footer>
+		<p class="footer">&copy; Copyright 2019 Ye Olde Bookshop all right reserved.</p>
+	</footer>
+    <script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+		var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			label: "&#8801;"
+		});
+    </script>
+</body>
+</html>

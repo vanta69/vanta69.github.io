@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Book Shop City Christchurch. Old Bookshop where you can visit or buy books. Check out our new arrivals books first edition showcase, featured author book of the week">
+	<meta name="keywords" content="Christchurch Bookshop, Book store, old books, rare books, hard find books, books valuations, Book restoration, book shop">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ye Olde Bookshop</title>
+    <link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/responsive-nav.js"></script>
+    <script src="js/shuffleImages.js"></script>
+</head>
+<body>
+<header>
+		<h1>Ye Olde Bookshop</h1>
+	</header>
+	
+	<nav class="nav-collapse">
+		<ul>
+            <li><a href="home.html">home</a></li>
+			<li><a href="about_us.html">about us</a></li>
+			<li><a href="new_arrivals.html">new arrivals</a></li>
+			<li><a href="books.html" class="selected">books</a></li>
+			<li><a href="restoration.html">restoration</a></li>
+			<li><a href="enquiries.html">enquires</a></li>
+		</ul>
+	</nav>
+	
+	<div id="contents">
+        <main>
+				<div class="showcase_harrypotter">
+					<div class="harrypotter_img">
+						<img id="harryPotter" src="images/harryPotter_front.jpg" alt="Harry Potter">
+						
+						<div class="three_img">
+							<div class="harrypotter_img_01">
+								<img onclick="shuffleImage('images/harryPotter_front.jpg')" class="harry_potter" src="images/harryPotter_front-small.jpg" alt="Harry Potter Front">
+							</div>
+						
+							<div class="harrypotter_img_02">
+								<img onclick="shuffleImage('images/harryPotter_back.jpg')" class="harry_potter" src="images/harryPotter_back-small.jpg" alt="Harry Potter Back">
+							</div>
+						
+							<div class="harrypotter_img_03">
+								<img onclick="shuffleImage('images/harryPotter_page.jpg')" class="harry_potter" src="images/harryPotter_page-small.jpg" alt="Harry Potter Page">
+							</div>
+						</div>
+					</div>			
+							
+					
+             
+					<div class="harry_contents">
+						<h2>Harry Potter and the Philosopher's Stone</h2>
+						<p class="author_heading">By J. K. Rowling</p>
+					
+						<p>First edition, third impression (Bloomsbury Publishing, Plc, 1997). The first and second impressions were issued without dust jackets, making this the first to have one.  </p>
+						<p>Original pictorial boards with a small ding to top edge of lower board, fine otherwise.</p>
+						<p>The original and unclipped dust jacket has some fading to spine panel – as is common – and mild edge wear; fairly inconspicuous damp stain to top of dust jacket verso.</p>
+						<p>Overall a very good copy indeed or better. </p>
+					</div>
+			</div>	
+			
+        </main>
+    </div>
+	
+	<footer>
+		<p class="footer">&copy; Copyright 2019 Ye Olde Bookshop all right reserved.</p>
+	</footer>
+    <script>
+	    // The default label is the word "Menu". but we can use a special character to
+		// give us the "hamburger" icon.		
+		var navigation = responsiveNav(".nav-collapse", {
+			insert: "before",
+			label: "&#8801;"
+		});
+    </script>
+</body>
+</html>
